@@ -1,0 +1,49 @@
+{
+    "collectionName": "components_blocks_text_and_pictures",
+    "info": {
+        "displayName": "Text and Image",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "header": {
+            "type": "component",
+            "repeatable": false,
+            "component": "texts.header"
+        },
+        "paragraphs": {
+            "type": "component",
+            "repeatable": true,
+            "component": "texts.paragraph"
+        },
+        "buttons": {
+            "type": "component",
+            "repeatable": true,
+            "component": "actions.buttons"
+        },
+        "align": {
+            "type": "enumeration",
+            "enum": [
+                "left",
+                "center",
+                "right"
+            ]
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "subscribe": {
+            "type": "component",
+            "repeatable": false,
+            "component": "actions.subscribe"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_displays_works_showcases",
+  "info": {
+    "displayName": "work display",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "work": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::work.work"
+    }
+  }
+}

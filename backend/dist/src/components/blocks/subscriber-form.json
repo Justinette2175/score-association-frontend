@@ -1,0 +1,31 @@
+{
+    "collectionName": "components_blocks_subscriber_forms",
+    "info": {
+        "displayName": "Subscriber Form",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "header": {
+            "type": "component",
+            "repeatable": false,
+            "component": "texts.header"
+        },
+        "text": {
+            "type": "component",
+            "repeatable": false,
+            "component": "texts.paragraph"
+        },
+        "submit_button_text": {
+            "type": "string"
+        },
+        "confirmation_text": {
+            "type": "text"
+        },
+        "subscribe": {
+            "type": "component",
+            "repeatable": false,
+            "component": "actions.subscribe"
+        }
+    }
+}

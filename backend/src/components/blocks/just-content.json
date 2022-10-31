@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_blocks_just_contents",
+  "info": {
+    "displayName": "Just Content"
+  },
+  "options": {},
+  "attributes": {
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "texts.paragraph"
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.header"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "actions.buttons"
+    }
+  }
+}

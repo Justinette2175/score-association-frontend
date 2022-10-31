@@ -1,0 +1,35 @@
+{
+    "kind": "singleType",
+    "collectionName": "artists_pages",
+    "info": {
+        "singularName": "artists-page",
+        "pluralName": "artists-pages",
+        "displayName": "Artists page",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "blocks": {
+            "type": "dynamiczone",
+            "components": [
+                "blocks.all-artists",
+                "blocks.all-works",
+                "blocks.hero",
+                "blocks.subscriber-form",
+                "blocks.works-showcase"
+            ],
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        }
+    }
+}

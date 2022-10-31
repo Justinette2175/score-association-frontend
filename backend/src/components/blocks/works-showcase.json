@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_works_showcases",
+  "info": {
+    "displayName": "Works showcase"
+  },
+  "options": {},
+  "attributes": {
+    "works": {
+      "type": "component",
+      "repeatable": true,
+      "component": "displays.works-showcase"
+    }
+  }
+}

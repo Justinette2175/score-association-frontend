@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.all-artists",
+        "blocks.all-works",
+        "blocks.hero",
+        "blocks.just-content",
+        "blocks.subscriber-form",
+        "blocks.text-and-picture",
+        "blocks.works-showcase",
+        "texts.header",
+        "texts.paragraph"
+      ]
+    }
+  }
+}

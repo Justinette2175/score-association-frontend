@@ -1,0 +1,43 @@
+{
+    "collectionName": "components_blocks_heroes",
+    "info": {
+        "displayName": "hero",
+        "icon": "certificate",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "background_image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "header": {
+            "displayName": "header",
+            "type": "component",
+            "repeatable": false,
+            "component": "texts.header"
+        },
+        "paragraph": {
+            "displayName": "paragraph",
+            "type": "component",
+            "repeatable": false,
+            "component": "texts.paragraph"
+        },
+        "buttons": {
+            "displayName": "buttons",
+            "type": "component",
+            "repeatable": true,
+            "component": "actions.buttons"
+        },
+        "background_video_url": {
+            "type": "string"
+        }
+    }
+}

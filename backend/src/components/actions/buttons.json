@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_actions_buttons",
+  "info": {
+    "displayName": "buttons"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "external": {
+      "type": "boolean"
+    }
+  }
+}

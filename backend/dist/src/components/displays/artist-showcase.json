@@ -1,0 +1,15 @@
+{
+    "collectionName": "components_displays_artist_showcases",
+    "info": {
+        "displayName": "artist display",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "artist": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::artist.artist"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_texts_paragraphs",
+  "info": {
+    "displayName": "paragraph",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "center"
+      ]
+    }
+  }
+}

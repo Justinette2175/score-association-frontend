@@ -1,0 +1,25 @@
+{
+    "collectionName": "components_actions_subscribes",
+    "info": {
+        "displayName": "Subscribe",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "email_placeholder": {
+            "type": "string"
+        },
+        "name_placeholder": {
+            "type": "string"
+        },
+        "button_text": {
+            "type": "string"
+        },
+        "message_placeholder": {
+            "type": "string"
+        },
+        "confirmation_message": {
+            "type": "text"
+        }
+    }
+}
