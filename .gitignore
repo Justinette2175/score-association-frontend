@@ -24,9 +24,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/front-end/.env
-/front-end/.env.development
-/front-end/node_modules
-/back-end/.env
-/back-end/node_modules
+/frontend/.env
+/frontend/.env.development
+/frontend/node_modules
+/backend/.env
+/backend/node_modules
 
