@@ -9,14 +9,14 @@ export function HeroBlock({
   backgroundVideoUrl
 }: Omit<HeroBlockData, "__component">) {
   return (
-    <div className="min-h-screenMinusHeader overflow-hidden relative h-auto">
+    <div className="min-h-screenMinusHeader overflow-y-hidden relative h-auto -ml-8 -mr-8">
       {(backgroundImage?.name || backgroundVideoUrl) && (
-        <div className="absolute top-0 -right-8 -left-8 bottom-0">
+        <div className="absolute top-0 right-0 -left-0 bottom-0 overflow-hidden">
           {backgroundImage?.name && (
             <CloudinaryImage imageName={backgroundImage?.name} />
           )}
           {backgroundVideoUrl && (
-            <video autoPlay loop muted>
+            <video autoPlay loop muted className="max-w-none absolute bottom-0">
               <source src={backgroundVideoUrl} type="video/mp4" />
             </video>
           )}
@@ -28,7 +28,7 @@ export function HeroBlock({
         <div className="flex justify-center items-center">
           <div className="min-h-screenMinusHeader relative flex items-center">
             <div className="grid gap-4 grid-flow-row ">
-              <h2 className="text-white text-9xl font-bold text-center font-serif font-semibold">
+              <h2 className="text-white text-6xl md:text-9xl text-center font-serif font-semibold">
                 {header?.text}
               </h2>
               <p className="text-lg text-center">{paragraph?.text}</p>

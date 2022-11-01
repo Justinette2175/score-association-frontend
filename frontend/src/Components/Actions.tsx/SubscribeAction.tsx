@@ -14,6 +14,7 @@ export function SubscribeAction({
   const [name, setName] = useState<string>("");
 
   const createSubscriberMutation = useCreateSubscriberMutation();
+  console.log("createSubscriberMutation", createSubscriberMutation);
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = useCallback(
     (e) => {
@@ -24,7 +25,7 @@ export function SubscribeAction({
   );
 
   return createSubscriberMutation.isSuccess ? (
-    <p>{confirmationMessage}</p>
+    <p className="text-sm italic">{confirmationMessage}</p>
   ) : (
     <form onSubmit={handleSubmit} className="w-full flex justify-center">
       <div className="max-w-sm grid grid-flow-row gap-2 w-full">
@@ -46,6 +47,9 @@ export function SubscribeAction({
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
+        {createSubscriberMutation.isError && (
+          <p className="text-sm italic">There was an error, please try again</p>
+        )}
         <div className="flex justify-end">
           <Button type="submit" label={buttonText} disabled={!email || !name} />
         </div>

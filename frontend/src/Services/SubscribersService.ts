@@ -5,12 +5,12 @@ const SUBSCRIBERS_ROUTE = "/subscribers";
 
 export async function createSubscriber({
   email,
-  name,
-  title
+  name
 }: CreateSubscriberParameters) {
   return AxiosInstance.post(SUBSCRIBERS_ROUTE, {
-    email,
-    name,
-    title
+    data: {
+      email,
+      name
+    }
   });
 }

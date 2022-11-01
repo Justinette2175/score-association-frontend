@@ -16,7 +16,10 @@ export function Menu({ links }: MenuProps): React.ReactElement {
     <div className="flex -mx-4">
       {links.map((link) => {
         return (
-          <span key={link.to} className="mx-4 hover:text-red-700">
+          <span
+            key={link.to}
+            className="mx-4 uppercase text-sm hover:text-gray-400"
+          >
             <Link to={link.to}>{link.label}</Link>
           </span>
         );
