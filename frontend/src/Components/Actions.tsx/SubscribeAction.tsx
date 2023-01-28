@@ -14,7 +14,6 @@ export function SubscribeAction({
   const [name, setName] = useState<string>("");
 
   const createSubscriberMutation = useCreateSubscriberMutation();
-  console.log("createSubscriberMutation", createSubscriberMutation);
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = useCallback(
     (e) => {
