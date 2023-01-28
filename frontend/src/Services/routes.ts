@@ -4,3 +4,5 @@ export enum Routes {
   ARTISTS_PAGE_ROUTE = "/artists-page",
   ABOUT_PAGE_ROUTE = "/about-page"
 }
+
+export const USE_STATIC_DATA = true;

@@ -1,7 +1,12 @@
+import axios from "axios";
 import { CreateSubscriberParameters } from "../Types";
-import { AxiosInstance } from "./ApiService";
 
-const SUBSCRIBERS_ROUTE = "/subscribers";
+export const AxiosInstance = axios.create({
+  baseURL: process.env.SCORE_ASSOCIATION_SUBSCRIBE_AWS_GATEWAY_URL,
+  timeout: 1000
+});
+
+const SUBSCRIBERS_ROUTE = "/subscribe";
 
 export async function createSubscriber({
   email,

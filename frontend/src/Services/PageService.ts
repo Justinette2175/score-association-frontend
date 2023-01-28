@@ -2,9 +2,7 @@ import { Locales, Page } from "../Types";
 import { BlockTypes, ServerPage } from "../Types/ServerTypes";
 import { serverPageToPage } from "../Types/typeConverters";
 import { getWithLocale } from "./ApiService";
-import { Routes } from "./routes";
-
-const USE_STATIC_DATA = true;
+import { Routes, USE_STATIC_DATA } from "./routes";
 
 const STATIC_HOME_PAGE_DATA: ServerPage = {
   id: "home",
