@@ -225,7 +225,7 @@ const STATIC_COMPETITION_PAGE_DATA: ServerPage = {
             id: "competition-image",
             label: "See competition image",
             external: true,
-            href: "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/hubble_potw2236a.jpg"
+            href: "https://www.nasa.gov/image-feature/goddard/2022/hubble-sees-two-overlapping-galaxies"
           },
           {
             id: "composer-submission",
