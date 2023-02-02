@@ -23,6 +23,10 @@ export function Header(): React.ReactElement {
             {
               label: "About",
               to: FRONT_END_ROUTES.about
+            },
+            {
+              label: "Competition",
+              to: FRONT_END_ROUTES.competition
             }
           ]}
         />

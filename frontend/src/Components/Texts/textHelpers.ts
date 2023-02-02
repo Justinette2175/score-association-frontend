@@ -14,11 +14,27 @@ const textAlignToClass: Record<HeaderData["align"], string> = {
   right: "text-right"
 };
 
+const sizeToClass: Record<string, string> = {
+  sm: "text-sm",
+  md: "",
+  lg: "text-lg",
+  xl: "text-xl"
+};
+
 export function getTextClasses(text: HeaderData | ParagraphData) {
   const classes = [];
   if (text.__component === "header" && text.type) {
     classes.push("font-serif");
     classes.push(textTypeToClass[text.type]);
+  }
+  if (text.__component === "paragraph" && text.bullet) {
+    classes.push("list-disc ml-4");
+  }
+  if (text.__component === "paragraph" && text.size) {
+    classes.push(sizeToClass[text.size]);
+  }
+  if (text.__component === "paragraph" && text.bold) {
+    classes.push("font-bold");
   }
   if (text.align) {
     classes.push(textAlignToClass[text.align]);

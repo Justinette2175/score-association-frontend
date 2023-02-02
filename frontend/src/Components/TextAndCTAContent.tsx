@@ -14,6 +14,7 @@ export function TextAndCTAContent({
   header,
   buttons
 }: TextAndCTAContentProps) {
+  console.log("buttons", buttons);
   return (
     <div className="grid gap-6 grid-flow-row">
       {header && <HeaderText {...header} />}
@@ -22,7 +23,7 @@ export function TextAndCTAContent({
           paragraphs.map((p) => <ParagraphText key={p.id} {...p} />)}
       </div>
       {buttons && (
-        <div className="flex">
+        <div className="flex w-full justify-between flex-wrap">
           {buttons.map((button) => (
             <ButtonAction key={button.id} {...button} />
           ))}

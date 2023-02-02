@@ -66,6 +66,9 @@ export type ServerParagraph = {
   id: string;
   text?: string;
   align?: ServerAlign;
+  bullet?: boolean;
+  size?: "sm" | "md" | "lg" | "xl";
+  bold?: boolean;
 };
 
 export type ServerButton = {

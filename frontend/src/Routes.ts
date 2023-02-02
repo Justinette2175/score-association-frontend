@@ -4,7 +4,8 @@ export enum FRONT_END_ROUTES {
   works = "/works",
   contact = "/contact",
   about = "/about",
-  admin = "admin"
+  admin = "admin",
+  competition = "/competition"
 }
 
 export function getRoute(route: FRONT_END_ROUTES) {
