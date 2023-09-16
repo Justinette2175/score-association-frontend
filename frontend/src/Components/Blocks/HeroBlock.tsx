@@ -27,11 +27,13 @@ export function HeroBlock({
       <div className="min-h-screenMinusHeader h-auto">
         <div className="flex justify-center items-center">
           <div className="min-h-screenMinusHeader relative flex items-center">
-            <div className="grid gap-4 grid-flow-row ">
-              <h2 className="text-white text-6xl md:text-9xl text-center font-serif font-semibold">
+            <div className="grid gap-12 grid-flow-row p-8 justify-items-center">
+              <h2 className="text-white text-6xl md:text-5xl text-center font-serif font-semibold">
                 {header?.text}
               </h2>
-              <p className="text-lg text-center">{paragraph?.text}</p>
+              <div className="max-w-lg">
+                <p className="text-md text-center">{paragraph?.text}</p>
+              </div>
             </div>
           </div>
         </div>

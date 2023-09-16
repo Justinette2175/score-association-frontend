@@ -39,7 +39,7 @@ export function PageLayout({
       <div className="bg-black min-h-screen">
         <div
           className={`fixed w-screen z-30 transition ease-in-out duration-300 ${
-            isHeaderCollapsed ? "h-20" : "h-header"
+            isHeaderCollapsed ? "h-16" : "h-header"
           }`}
         >
           <Header />

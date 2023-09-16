@@ -24,7 +24,7 @@ module.exports = {
         height: "height"
       },
       spacing: ({ theme }) => ({
-        header: "6rem"
+        header: "5rem"
       }),
       minHeight: {
         screenMinusHeader: "calc(100vh - 6rem)"

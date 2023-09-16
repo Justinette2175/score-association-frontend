@@ -4,7 +4,7 @@ export function Section({
   children
 }: PropsWithChildren<{}>): React.ReactElement {
   return (
-    <div className="my-72">
+    <div className="mt-8 mb-48">
       <div className="flex justify-center items-center">{children}</div>
     </div>
   );

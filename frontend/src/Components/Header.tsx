@@ -13,7 +13,7 @@ export function Header(): React.ReactElement {
           alt="SCORE association logo"
         />
       </Link>
-      <div>
+      {/* <div>
         <Menu
           links={[
             {
@@ -30,7 +30,7 @@ export function Header(): React.ReactElement {
             }
           ]}
         />
-      </div>
+      </div> */}
     </div>
   );
 }
