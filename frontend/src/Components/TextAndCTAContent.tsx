@@ -14,7 +14,6 @@ export function TextAndCTAContent({
   header,
   buttons
 }: TextAndCTAContentProps) {
-  console.log("buttons", buttons);
   return (
     <div className="grid gap-6 grid-flow-row">
       {header && <HeaderText {...header} />}
