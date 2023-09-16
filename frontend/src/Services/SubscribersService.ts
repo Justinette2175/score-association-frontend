@@ -6,10 +6,11 @@ export async function createSubscriber({
   name
 }: CreateSubscriberParameters) {
   try {
-    const mailerLiteApiKey = process.env.REACT_APP_MAILERLITE_API_KEY;
-    const mailerLiteListId = process.env.REACT_APP_MAILERLITE_LIST_ID;
-    const mailerLiteEndpoint = `https://api.mailerlite.com/api/v2/groups/${mailerLiteListId}/subscribers`;
-    if (!mailerLiteApiKey) {
+    const mailerLiteApiToken = process.env.REACT_APP_MAILERLITE_API_TOKEN;
+    const mailerLiteSubscribersGroupId =
+      process.env.REACT_APP_MAILERLITE_SUBSCRIBERS_GROUP_ID;
+    const mailerLiteEndpoint = `https://connect.mailerlite.com/api/subscribers`;
+    if (!mailerLiteApiToken) {
       console.log("Missing API key for mailing service");
       return;
     }
@@ -17,13 +18,16 @@ export async function createSubscriber({
       mailerLiteEndpoint,
       {
         email,
-        name
-        // Add other subscriber data as needed
+        fields: {
+          name
+        },
+        groups: [mailerLiteSubscribersGroupId]
       },
       {
         headers: {
           "Content-Type": "application/json",
-          "X-MailerLite-ApiKey": mailerLiteApiKey
+          Accept: "application/json",
+          Authorization: `Bearer ${mailerLiteApiToken}`
         }
       }
     );
