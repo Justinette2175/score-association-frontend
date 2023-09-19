@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FRONT_END_ROUTES } from "../Routes";
-import { Menu } from "./Menu";
 
 export function Header(): React.ReactElement {
   return (
