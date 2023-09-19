@@ -19,7 +19,7 @@ const STATIC_HOME_PAGE_DATA: ServerPage = {
         },
         paragraph: {
           id: "home-hero-paragraph",
-          text: "There is so much talent at our school, but it is hard to meet the right people to take our musical projects to the finish line. SCORE is a platform where collaborators from diverse artistic backgrounds, including film, composition, recording, production, performance, dance, and theatre, can connect and collaborate.",
+          text: "There is so much talent in our student body, but it is hard to meet the right people to take our musical projects to the finish line. SCORE is a platform where collaborators from diverse artistic backgrounds, including film, composition, recording, production, performance, dance, and theatre, can connect and collaborate.",
           align: "center"
         }
       },
