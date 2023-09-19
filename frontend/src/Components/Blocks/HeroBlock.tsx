@@ -1,6 +1,5 @@
 import { HeroBlockData } from "../../Types";
 import { CloudinaryImage } from "../CloudinaryImage";
-import { Section } from "../Section";
 
 export function HeroBlock({
   backgroundImage,

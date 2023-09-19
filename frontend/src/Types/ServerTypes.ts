@@ -1,5 +1,3 @@
-import { placeholder } from "@cloudinary/react";
-
 export enum BlockTypes {
   artistsShowcase = "blocks.artists-showcase",
   worksShowcase = "blocks.works-showcase",
